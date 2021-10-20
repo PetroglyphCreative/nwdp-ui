@@ -2,81 +2,96 @@
 
 
 @font-face {
-  font-family: 'Zilla Slab';
+  font-family: 'Open Sans';
   font-weight: 400; 
-  src: url(../fonts/zilla-slab/ZillaSlab-Regular.otf) format('opentype');
+  src: url(../fonts/open-sans/static/OpenSans/OpenSans-Regular.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Zilla Slab";
+  font-family: "Open Sans";
   font-weight: 400;
   font-style:italic;
-  src: url('../fonts/zilla-slab/ZillaSlab-RegularItalic.otf') format('opentype');
+  src: url('../fonts/open-sans/static/OpenSans/OpenSans-Italic.ttf') format('truetype');
 }
 @font-face {
-  font-family: "Zilla Slab";
+  font-family: "Open Sans";
   font-weight: 500;
-  src: url("../fonts/zilla-slab/ZillaSlab-SemiBold.otf") format("opentype");
+  src: url("../fonts/open-sans/static/OpenSans/OpenSans-Medium.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Zilla Slab";
+  font-family: "Open Sans";
   font-weight: 600;
-  src: url("../fonts/zilla-slab/ZillaSlab-SemiBold.otf") format("opentype");
+  src: url("../fonts/open-sans/static/OpenSans/OpenSans-SemiBold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Zilla Slab";
+  font-family: "Open Sans";
   font-weight: 700;
-  src: url("../fonts/zilla-slab/ZillaSlab-Bold.otf") format("opentype");
+  src: url("../fonts/open-sans/static/OpenSans/OpenSans-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Zilla Slab";
+  font-family: "Open Sans";
   font-weight: 700;
   font-style:italic;
-  src: url("../fonts/zilla-slab/ZillaSlab-BoldItalic.otf") format("opentype");
+  src: url("../fonts/open-sans/static/OpenSans/OpenSans-BoldItalic.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Libre Franklin";
-  font-weight: 400;
-  src: url("../fonts/libre-franklin/librefranklin-regular.ttf") format("truetype");
+	font-family: "Source Sans Pro";
+	font-weight: 300;
+	src: url("../fonts/source-sans-pro/SourceSansPro-ExtraLight.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Libre Franklin";
+	font-family: "Source Sans Pro";
+	font-weight: 300;
+	font-style:italic;
+	src: url("../fonts/source-sans-pro/SourceSansPro-ExtraLightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  src: url("../fonts/source-sans-pro/SourceSansPro-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
   font-weight: 400;
   font-style:italic;
-  src: url("../fonts/libre-franklin/librefranklin-italic.ttf") format("truetype");
+  src: url("../fonts/source-sans-pro/SourceSansPro-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Source Sans Pro";
+	font-weight: 500;
+	src: url("../fonts/source-sans-pro/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Source Sans Pro";
+	font-weight: 500;
+	font-style:italic;
+	src: url("../fonts/source-sans-pro/SourceSansPro-Italic.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Libre Franklin";
-  font-weight: 500;
-  src: url("../fonts/libre-franklin/librefranklin-medium.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Libre Franklin";
-  font-weight: 500;
-  font-style:italic;
-  src: url("../fonts/libre-franklin/librefranklin-mediumitalic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Libre Franklin";
-  font-weight: 600;
-  src: url("../fonts/libre-franklin/librefranklin-semibold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Libre Franklin";
+  font-family: "Source Sans Pro";
   font-weight: 600;
   font-style:italic;
-  src: url("../fonts/libre-franklin/librefranklin-semibolditalic.ttf") format("truetype");
+  src: url("../fonts/source-sans-pro/SourceSansPro-SemiBoldItalic.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Libre Franklin";
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  src: url("../fonts/source-sans-pro/SourceSansPro-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Source Sans Pro";
   font-weight: 700;
-  src: url("../fonts/libre-franklin/librefranklin-bold.ttf") format("truetype");
+  src: url("../fonts/source-sans-pro/SourceSansPro-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Libre Franklin";
+  font-family: "Source Sans Pro";
   font-weight: 700;
   font-style:italic;
-  src: url("../fonts/libre-franklin/librefranklin-bolditalic.ttf") format("truetype");
+  src: url("../fonts/source-sans-pro/SourceSansPro-BoldItalic.ttf") format("truetype");
 }
 
 @tailwind components;
@@ -335,7 +350,7 @@ a.skip-main:focus, a.skip-main:active {
     overflow:auto;
     margin: 10px 35%;
     padding:5px;
-    border-radius: 15px;
+
     border:4px solid yellow;
     text-align:center;
     font-size:1.2em;
@@ -374,3 +389,6 @@ blockquote footer{
 blockquote footer a{
  @apply not-italic;	
 }
+
+
+/* CS Styles */

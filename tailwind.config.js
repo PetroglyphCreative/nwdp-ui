@@ -1,8 +1,8 @@
 module.exports = {
   theme: {
 	fontFamily: {
-      'display': 'Zilla Slab, serif',
-      'body': ['"Libre Franklin"', 'sans-serif'],
+      'display': ['Source Sans Pro', 'serif'],
+      'body': ['Open Sans', 'sans-serif'],
     },
     boxShadow: {
       default: '0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06)',
