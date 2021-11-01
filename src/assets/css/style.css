@@ -103,6 +103,19 @@ hr {border-width:0;}
 th{
   @apply bg-gray-100 text-gray-300 font-bold py-2  text-left;
 }
+
+.nav-text {
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	@apply font-display;
+}
+
+.text-xtiny {
+	font-size:10px;
+	line-height:16px;
+	@apply font-body;
+}
+
 .text-tiny {
 	font-size:12px;
 	line-height:16px;
@@ -164,19 +177,21 @@ th{
 	font-size:72px;
 	line-height:96px;
 	font-weight:400;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
 	@apply font-display;
 }
 button{
-	 @apply font-bold py-2 px-4 rounded bg-green-500 text-white;
+	 @apply font-bold py-2 px-8  bg-black text-white;
 }
 button:hover{
-	@apply bg-green-800;
+	@apply bg-gray-700;
 }
 button.btn-lg{
 	@apply py-4 px-10 text-large;
 }
 .button-menu{
-	@apply font-bold py-2 px-4 rounded bg-green-900 text-white;
+	@apply font-bold py-2 px-4  bg-black text-white;
 }
 .button-menu:hover{
 	@apply bg-green-800;
@@ -192,7 +207,7 @@ label{
 	@apply font-bold;
 }
 input[type='text'], textarea {
-	@apply shadow bg-gray-100 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight;
+	@apply shadow bg-gray-100 appearance-none border  w-full py-2 px-3 text-gray-700 leading-tight;
 }
 input[type='text']:focus, textarea:focus{
 	@apply outline-none shadow-outline;
@@ -201,16 +216,16 @@ input[type='checkbox']{
 	@apply text-blue-800 bg-red-800;
 }
 input.error {
-	@apply shadow appearance-none border border-red-500 bg-red-100 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight;
+	@apply shadow appearance-none border border-red-500 bg-red-100  w-full py-2 px-3 text-gray-700 mb-3 leading-tight;
 }
 select{
-	@apply block appearance-none w-full   border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight;
+	@apply block appearance-none w-full   border border-gray-200 text-gray-700 py-3 px-4 pr-8  leading-tight;
 }
 select:focus{
  @apply   outline-none shadow-outline bg-white border-green-700;
 }
 select.error {
-	@apply shadow appearance-none border border-red-500 bg-red-100 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight;
+	@apply shadow appearance-none border border-red-500 bg-red-100  w-full py-2 px-3 text-gray-700 mb-3 leading-tight;
 }
 ::selection {
   background: #F7C5A4; /* WebKit/Blink Browsers */
@@ -229,9 +244,9 @@ p.toobig{ min-width:91px;}
 .read p {
  @apply  max-w-2xl mr-auto ml-auto my-4 text-large;
 }
-.read h1 {@apply heading-dxl text-orange-600}
+.read h1 {@apply heading-dxl text-white}
 .read h2 {@apply heading-l text-green-500 my-8;}
-.read.home h2 {@apply text-orange-500;}
+.read.home h2 {@apply text-white;}
 .read h3{@apply heading-m text-gray-400 my-8;}
 .read h4 {@apply heading-s text-gray-700  my-8;}
 .read h5 {@apply heading-xs text-gray-700  my-8;}
@@ -260,7 +275,7 @@ header nav .vertical-menu a {
   display: inline-block;
   cursor: pointer;
   float:right;
-  @apply border rounded px-2 py-1;
+  @apply border  px-2 py-1;
 }
 img.logo {width:85%; max-width:300px;}
 .bar1, .bar2, .bar3 {
@@ -268,7 +283,7 @@ img.logo {width:85%; max-width:300px;}
   height: 4px;
   margin: 6px 0;
   transition: 0.4s;
-  @apply bg-gray-100 ;
+  @apply bg-gray-700 ;
 }
 
 .change .bar1 {
@@ -360,25 +375,25 @@ a.skip-main:focus, a.skip-main:active {
 	text-shadow:2px 3px 4px #373533;
 }
 .card {
-	@apply max-w-sm rounded overflow-hidden shadow-lg;
+	@apply max-w-sm  overflow-hidden shadow-lg;
 }
 .card img {
 	@apply w-full;
 }
 a .card h3, a .card h4 {
-	@apply text-orange-600 font-display text-2xl font-bold;
+	@apply text-white font-display text-2xl font-bold;
 }
 a .card p{
 	@apply text-gray-700 ;
 }
 .card.dark{
-	@apply text-white bg-gray-800;
+	@apply text-white bg-black;
 }
 a .card.dark p{
 	@apply text-white;
 }
 a .card.dark h3, a .card.dark h4 {
-	@apply text-orange-500;
+	@apply text-white;
 }
 blockquote {
 	@apply text-2xl border-l-4 border-green-200 text-gray-600 p-6 my-6 ;

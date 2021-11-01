@@ -12,7 +12,7 @@
 	<a class="skip-main" href="#main">Skip to main content</a><!-- basic accessibility feature. Move '#main' to your content's container-->
 	<header class="lg:px-2 px-1 flex flex-wrap items-center py-3 " id='pagehead'>
 			<div class="container ml-auto mr-auto px-2 md:max-w-full">
-					<nav class=" border-b-2 border-gray-500   block pt-2">
+					<nav class=" border-b border-gray-500   block py-2">
 						<ul class="block md:flex md:flex-wrap xl:flex-no-wrap  xl:items-stretch xl:justify-between ">
 							<li class=' flex text-center md:text-left md:w-1/2 xl:w-1/3   justify-between' >
 							<a href="/">Petroglyph UI</a>
@@ -24,7 +24,7 @@
 								</a>
 							  </li>
 							<li class=" primary_nav  md:flex md:order-last md:justify-center md:w-full lg:w-auto lg:order-none lg:ml-auto lg:mr-auto  xl:mr-0 border-box items-center" v-bind:class="{'block': m_showing, 'hidden': !m_showing}">
-							<button class="text-gray-800 mr-auto ml-auto  text-2xl  px-12 py-3 hover:text-gray-300 hover:bg-gray-100  md:text-base lg:text-lg md:px-3 lg:px-6 md:py-1 font-medium block md:flex  md:m-0 " v-on:mouseover="hovermenu" v-on:click="togglemenu" v-on:mouseout='hideboard' data-menu='menu-one' data-menutitle='Petroglyph UI Features' name='Page Features'>UI Kit Features<span class="text-gray-400 ml-1">&#9660;</span></button>
+							<button class="text-gray-800 mr-auto ml-auto  text-2xl  px-12 py-3 hover:text-gray-300 hover:bg-gray-100  md:text-base lg:text-lg md:px-3 lg:px-6 md:py-1 font-medium block md:flex  md:m-0 nav-text" v-on:mouseover="hovermenu" v-on:click="togglemenu" v-on:mouseout='hideboard' data-menu='menu-one' data-menutitle='Petroglyph UI Features' name='Page Features'>UI Kit Features<span class="text-gray-400 ml-1 text-small">&#8744;</span></button>
 								
 							<div class='p-4  vertical-menu' data-nav='menu-one' data-menu-place='left' v-bind:style="{ display: display.one }">
 									<ul class="subnav left" >
@@ -47,7 +47,7 @@
 									
 									</ul>
 								</div>
-								<button class="text-gray-800 hover:text-gray-300 hover:bg-gray-100  text-2xl md:text-base lg:text-lg md:px-3 lg:px-6 py-3 md:py-1 font-medium block md:flex mr-auto ml-auto md:m-0" v-on:mouseover="hovermenu" v-on:click="togglemenu" v-on:mouseout='hideboard' data-menu='menu-two' data-menutitle='For Producers' name="About Aquarian Web Studio">About Aquarian Web Studio<span class="text-gray-400 ml-1">&#9660;</span></button>
+								<button class="text-gray-800 hover:text-gray-300 hover:bg-gray-100  text-2xl md:text-base lg:text-lg md:px-3 lg:px-6 py-3 md:py-1 font-medium block md:flex mr-auto ml-auto md:m-0 nav-text" v-on:mouseover="hovermenu" v-on:click="togglemenu" v-on:mouseout='hideboard' data-menu='menu-two' data-menutitle='For Producers' name="About Aquarian Web Studio">About Aquarian Web Studio<span class="text-gray-400 ml-1 text-small">&#8744;</span></button>
 								<div class='p-4 vertical-menu' data-nav='menu-two' data-menu-place='left' v-bind:style="{ display: display.two }">
 									<ul class="subnav left">
 									
@@ -58,7 +58,7 @@
 								<div  data-nav='menu-two' data-menu-place='right' v-bind:style="{ display: display.two }" class="subnav right ">     
 									
 								</div>
-								<button class="text-gray-800 hover:text-gray-300 hover:bg-gray-100  text-2xl md:text-base lg:text-lg md:px-3 lg:px-6  py-3  md:py-1 font-medium block md:flex mr-auto ml-auto md:m-0"  v-on:mouseover="hovermenu" v-on:click="togglemenu" v-on:mouseout='hideboard' data-menu='menu-three' data-menutitle='Food Service &amp; Retail'>Demo Menu <span class="text-gray-400 ml-1">&#9660;</span></button>
+								<button class="text-gray-800 hover:text-gray-300 hover:bg-gray-100  text-2xl md:text-base lg:text-lg md:px-3 lg:px-6  py-3  md:py-1 font-medium block md:flex mr-auto ml-auto md:m-0 nav-text"  v-on:mouseover="hovermenu" v-on:click="togglemenu" v-on:mouseout='hideboard' data-menu='menu-three' data-menutitle='Food Service &amp; Retail'>Demo Menu <span class="text-gray-400 ml-1 text-small">&#8744;</span></button>
 								<div class='p-4 vertical-menu' data-nav='menu-three' data-menu-place='left' v-bind:style="{ display: display.three }">
 									<ul class="subnav left">
 										
@@ -72,7 +72,7 @@
 									</div>
 								</div>
 								
-								<a href="https://github.com/PetroglyphCode/petroglyph-UI" class="text-gray-900 hover:text-gray-300 px-4 py-3 md:py-1  rounded text-gray-100 hover:border-blue-600 block  hover:bg-gray-100 ml-auto mr-auto md:mr-0 md:ml-0 md:flex font-medium  text-2xl md:text-base lg:text-lg md:px-3 lg:px-6  text-center">GitHub</a>
+								<a href="https://github.com/PetroglyphCode/petroglyph-UI" class="text-gray-900 hover:text-gray-300 px-4 py-3 md:py-1  rounded text-gray-100 hover:border-blue-600 block  hover:bg-gray-100 ml-auto mr-auto md:mr-0 md:ml-0 md:flex font-medium  text-2xl md:text-base lg:text-lg md:px-3 lg:px-6  text-center nav-text">GitHub</a>
 								
 							</li>
 							<li class="secondary_nav  md:flex md:justify-end md:w-1/2 lg:w-auto items-center" v-bind:class="{'block': m_showing, 'hidden': !m_showing}">
@@ -99,23 +99,23 @@
 				</nav>
 			</div>
 	</header>
-	<div class="flex mb-4" id='main'>
+	<div class="flex mb-4 px-12" id='main'>
 		<div class="w-full  ">
-		<h1 class='font-display text-3xl text-center text-gray-700 font-light mt-5 mb-5'>NW Dance Project UI Kit</h1>
+		<h1 class='font-display heading-dxl text-center text-gray-700 font-light mt-5 mb-5 py-20'>NW Dance Project UI Kit</h1>
 		</div>
 	</div>
 	<div class="flex mb-4">
 		<div class="w-full  h-12">
-		<h3 class='font-display text-large text-center text-gray-600'>A starter document to house the desigray components for the new NW Dance Project Website</h3>
+		<h3 class='font-display text-large text-center text-gray-600'>A starter document to house the desired components for the new NW Dance Project Website</h3>
 		</div>
 	</div>
-	<div class="flex mb-4">
-        <div class="w-full  font-body lg:flex lg:flex-wrap text-gray-700  bg-gray-100">
+	<div class="flex mb-4 ">
+        <div class="w-full  font-body lg:flex lg:flex-wrap text-gray-700  bg-gray-100 p-10">
 	      <p class="w-full lg:w-1/4 lg:flex lg:flex-shrink-0 items-center pr-3 mr-2 ml-auto font-display text-2xl text-gray-600 align-middle font-semibold text-center lg:text-right mb-5">This page will serve a few critical roles in development:</p>
 		      <ul class="w-2/3 lg:w-1/3 ml-auto lg:ml-5 block mr-auto list-disc">
-			      <li class='mb-2'>Strike an immediate note with desigray aesthetic: industrial, contemporary.</li>
+			      <li class='mb-2'>Strike an immediate note with desired aesthetic: industrial, contemporary.</li>
 			      <li class='mb-2'>Integrate muted color palette and use color sparingly</li>
-			      <li class='mb-2'>Demonstrate all desigray web page features as part of a whole.</li>
+			      <li class='mb-2'>Demonstrate all desired web page features as part of a whole.</li>
 			      <li class='mb-2'>Provide ground to experiment with ideas in a unified design.</li>
 			      <li class='mb-2'>Create CMS-ready components that look exactly like the design.</li>
 			      <li class='mb-2'>Provide a testing ground for additional interactivity</li>
@@ -137,12 +137,12 @@
 		<div class="w-1/2   font-body flex flex-wrap text-gray-700 md:pl-12 ml-auto md:ml-0 mr-auto md:mr-0  mb-10 mt-2 md:mt-0 md:mb-0">
 			<p class="w-full font-display text-3xl">AaBbCcDdEe</p>
             <p class="w-full font-display text-3xl">1234567890?!</p>
-            <p class="w-full  mt-2"><b>Zilla Slab</b>&mdash; for headings</p>
+            <p class="w-full  mt-2"><b>Source Sans Pro</b>&mdash; for headings</p>
 		</div>
 		<div class="w-1/2  font-body flex flex-wrap text-gray-700 md:pl-12 ml-auto md:ml-0 mr-auto md:mr-0 mt-2 md:mt-0 md:mb-0">
 			<p class="w-full font-body text-3xl">AaBbCcDdEe</p>
             <p class="w-full font-body text-3xl">1234567890?!</p>
-            <p class="w-full mt-2"><b>Libre Franklin</b>&mdash; for body copy</p>
+            <p class="w-full mt-2"><b>Open Sans</b>&mdash; for body copy</p>
 		</div>
 		</div>
 	</div>
@@ -165,84 +165,84 @@
 			</tr>
 			<tr>
 				<td class="text-tiny">Tiny</td>
-				<td>Libre Franklin</td>
+				<td>Open Sans</td>
 				<td>Regular</td>
 				<td>12px</td>
 				<td>16px</td>
 			</tr>
 			<tr>
 				<td class="text-small">Body Small</td>
-				<td>Libre Franklin</td>
+				<td>Open Sans</td>
 				<td>Regular</td>
 				<td>14px</td>
 				<td>24px</td>
 			</tr>
 			<tr>
 				<td >Body</td>
-				<td>Libre Franklin</td>
+				<td>Open Sans</td>
 				<td>Regular</td>
 				<td>16px</td>
 				<td>24px</td>
 			</tr>
 			<tr>
 				<td class="text-large">Body Large</td>
-				<td>Libre Franklin</td>
+				<td>Open Sans</td>
 				<td>Regular</td>
 				<td>18px</td>
 				<td>32px</td>
 			</tr>
 			<tr>
 				<td class="heading-xs">Heading XS</td>
-				<td>Zilla Slab</td>
+				<td>Source Sans Pro</td>
 				<td>Bold</td>
 				<td>21px</td>
 				<td>32px</td>
 			</tr>
 			<tr>
 				<td class="heading-s">Heading Small</td>
-				<td>Zilla Slab</td>
+				<td>Source Sans Pro</td>
 				<td>Bold</td>
 				<td>24px</td>
 				<td>40px</td>
 			</tr>
 			<tr>
 				<td class="heading">Heading</td>
-				<td>Zilla Slab</td>
+				<td>Source Sans Pro</td>
 				<td>Bold</td>
 				<td>28px</td>
 				<td>48px</td>
 			</tr>
 			<tr>
 				<td class="heading-m">Heading Medium</td>
-				<td>Zilla Slab</td>
+				<td>Source Sans Pro</td>
 				<td>Bold</td>
 				<td>32px</td>
 				<td>56px</td>
 			</tr>
 			<tr>
 				<td class="heading-l">Heading Large</td>
-				<td>Zilla Slab</td>
+				<td>Source Sans Pro</td>
 				<td>Bold</td>
 				<td>36px</td>
 				<td>64px</td>
 			</tr>
 			<tr>
 				<td class="heading-xl">Heading XL</td>
-				<td>Zilla Slab</td>
+				<td>Source Sans Pro</td>
 				<td>Bold</td>
 				<td>48px</td>
 				<td>72px</td>
 			</tr>
 			<tr>
 				<td class="heading-d">Display</td>
-				<td>Zilla Slab</td>
+				<td>Source Sans Pro</td>
 				<td>Regular</td>
 				<td>60px</td>
 				<td>80px</td>
 			</tr>
 			<tr>
 				<td class="heading-dxl">Display XL</td>
-				<td>Zilla Slab</td>
+				<td>Source Sans Pro</td>
 				<td>Regular</td>
 				<td>72px</td>
 				<td>96px</td>
@@ -344,15 +344,15 @@
 		<div class="w-full lg:w-1/3  font-body text-gray-700 ml-3 mr-3 mb-12">
 			<h3 class="ml-10 text-xl font-display text-gray-600 font-bold">Accent Colors</h3>
 			<div class="flex flex-wrap mb-10 ">
-			  <div class="flex-1 bg-blue-100 h-12 md:h-20 lg:h-30"></div>
-			  <div class="flex-1 bg-blue-200 h-12 md:h-20 lg:h-30"></div>
-			  <div class="flex-1 bg-blue-300 h-12 md:h-20 lg:h-30"></div>
-			  <div class="flex-1 bg-blue-400 h-12 md:h-20 lg:h-30"></div>
-			  <div class="flex-1 bg-blue-500 h-12 md:h-20 lg:h-30"></div>
-			  <div class="flex-1 bg-blue-600  h-12 md:h-20 lg:h-30"></div>
-			  <div class="flex-1 bg-blue-700 h-12 md:h-20 lg:h-30"></div>
-			  <div class="flex-1 bg-blue-800 h-12 md:h-20 lg:h-30"></div>
-			  <div class="flex-1 bg-blue-900 h-12 md:h-20 lg:h-30"></div>
+			  <div class="flex-1 bg-earthy-100 h-12 md:h-20 lg:h-30"></div>
+			  <div class="flex-1 bg-earthy-200 h-12 md:h-20 lg:h-30"></div>
+			  <div class="flex-1 bg-earthy-300 h-12 md:h-20 lg:h-30"></div>
+			  <div class="flex-1 bg-earthy-400 h-12 md:h-20 lg:h-30"></div>
+			  <div class="flex-1 bg-earthy-500 h-12 md:h-20 lg:h-30"></div>
+			  <div class="flex-1 bg-earthy-600  h-12 md:h-20 lg:h-30"></div>
+			  <div class="flex-1 bg-earthy-700 h-12 md:h-20 lg:h-30"></div>
+			  <div class="flex-1 bg-earthy-800 h-12 md:h-20 lg:h-30"></div>
+			  <div class="flex-1 bg-earthy-900 h-12 md:h-20 lg:h-30"></div>
 			</div>
 			<div class="flex flex-wrap mb-10 ">
 			  <div class="flex-1 bg-yellow-100 h-12 md:h-20 lg:h-30"></div>
@@ -392,7 +392,7 @@
       <p class="">Here's another text paragraph. How does the spacing look? Does it look right on mobile? can we make improvements for middle-width devices? Big screens, small screens all about the thread memes.</p>
       <h2  >Secondary heading (h2)</h2>
       <figure >
-      <img class="mr-auto ml-auto"src='./assets/img/sometimes_800.jpg' alt='image' title='Sometimes painting by Caroline C. Blaker Latex on Canvas, 2011'>
+      <img class="mr-auto ml-auto" src='assets/img/nw_dance_project_by_tdf.png' alt='image' title='Sometimes painting by Caroline C. Blaker Latex on Canvas, 2011'>
 
       <figcaption class="text-center">Sometimes, by Caroline C. Blaker Latex on Canvas, 2011 ~ Contact for Price</figcaption>
       </figure>
@@ -447,7 +447,7 @@
 		</div>
 		<div class="w-full lg:w-5/6  font-body mb-12">
 			<div class="mb-4 ">
-				<button>Button</button>
+				<button class="">Button</button>
 				<button class='btn-lg'>Big Button</button>
 			</div>
 			<div class="flex mb4">
@@ -566,12 +566,12 @@
 		<div class="w-full lg:w-5/6 font-body mb-12 md:flex">
 			<div class="w-full lg:w-1/3  font-body text-gray-700 md:mr-5 lg:mr-auto lg:mb-12">
 				<h5 class='font-semibold body-l'>Painting: Sometimes</h5>
-				<img src='assets/img/sometimes_800.jpg' alt='image' title='Sometimes painting by Caroline C. Blaker Latex on Canvas, 2011'>
+				<img src='assets/img/nw_dance_project_by_tdf.png' alt='image' title='Sometimes painting by Caroline C. Blaker Latex on Canvas, 2011'>
 			</div>
 			<div class="w-full lg:w-1/3  font-body text-gray-700 md:ml-5 lg:mr-auto lg: mb-12">
 				<h5 class='font-semibold body-l'>Painting: Sometimes</h5>
 				<figure>
-				<img src='./assets/img/sometimes_800.jpg' alt='image' title='Sometimes painting by Caroline C. Blaker Latex on Canvas, 2011'>
+				<img src='assets/img/nw_dance_project_by_tdf.png' alt='image' title='Sometimes painting by Caroline C. Blaker Latex on Canvas, 2011'>
 
 				<figcaption>Sometimes, by Caroline C. Blaker Latex on Canvas, 2011 ~ Contact for Price</figcaption>
 </figure>
@@ -592,7 +592,7 @@
 				<div class="flex-grab ml-auto mr-auto">
 				<a href="https://www.aquarianwebdesign.com">
 				<div class=" card ml-4 mr-4">
-				  <img class="" src="./assets/img/sometimes_800.jpg" alt="Image">
+				  <img class="" src="assets/img/nw_dance_project_by_tdf.png" alt="Image">
 				  <div class="px-6 py-4">
 				    <h4 class="">A card</h4>
 				    <p class=" ">
@@ -630,7 +630,7 @@
 				<div class="flex-grab ml-auto mr-auto">
 				<a href="https://www.petroglyphcreative.com">
 				<div class="card dark ml-4 mr-4 mb-8">
-				  <img class="w-full" src="./assets/img/sometimes_800.jpg" alt="Image">
+				  <img class="w-full" src="assets/img/nw_dance_project_by_tdf.png" alt="Image">
 				  <div class="px-6 py-4">
 				    <h4>Another card</h4>
 				    <p class="">
@@ -658,7 +658,7 @@
 			</div>
 		</div>
 	</div>
-	<footer class='flex  bg-gray-800  '>
+	<footer class='flex  bg-black  '>
 		<div class="w-full  font-body px-7 ">
 		<p class='font-body  text-center text-white m-12'> Code by Caroline C. Blaker for <a href="https://www.petroglyphcreative.com" class='text-blue-200'>Petroglyph Creative</a> using Tailwind CSS and Webpack. UI Kit Design by <a href="https://block81.com" class='text-blue-200'>Block 81</a>.</p>
 		</div>
